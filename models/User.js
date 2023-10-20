@@ -17,6 +17,10 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    qrCode: {
+        type: Buffer,
+        required: true
+    },
     time: {
         type: Date,
         default: Date.now
